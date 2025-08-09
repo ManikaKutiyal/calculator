@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cute Pixel Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="assets/calc.png">
+</head>
+<body>
+    <h1 class="cute-heading">♡ MY MATH BUDDY ♡</h1>
+    <div class="calculator">
+        <div class="display">
+            <div class="current-operation" id="currentOperation"></div>
+            <div class="current-input" id="currentInput">0</div>
+        </div>
+        <div class="buttons">
+            <button class="btn btn-clear" id="clear">C</button>
+            <button class="btn btn-backspace" id="backspace">←</button>
+            <button class="btn btn-history" id="history">LOG</button>
+            <button class="btn btn-operator" id="divide">÷</button>
+            
+            <button class="btn btn-number" id="seven">7</button>
+            <button class="btn btn-number" id="eight">8</button>
+            <button class="btn btn-number" id="nine">9</button>
+            <button class="btn btn-operator" id="multiply">×</button>
+            
+            <button class="btn btn-number" id="four">4</button>
+            <button class="btn btn-number" id="five">5</button>
+            <button class="btn btn-number" id="six">6</button>
+            <button class="btn btn-operator" id="subtract">-</button>
+            
+            <button class="btn btn-number" id="one">1</button>
+            <button class="btn btn-number" id="two">2</button>
+            <button class="btn btn-number" id="three">3</button>
+            <button class="btn btn-operator" id="add">+</button>
+            
+            <button class="btn btn-number" id="zero">0</button>
+            <button class="btn btn-number" id="decimal">.</button>
+            <button class="btn btn-equals" id="equals">=</button>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <div class="history-panel" id="historyPanel">
+        <button class="close-history" id="closeHistory">X</button>
+        <h3>CALCULATION HISTORY</h3>
+        <div id="historyList"></div>
+        <button class="clear-history" id="clearHistory">CLEAR HISTORY</button>
+    </div>
+
+    <div class="error-message" id="errorMessage">
+        <div>OOPSIE!</div>
+        <div>CAN'T DIVIDE BY ZERO</div>
+        <button class="close-error" id="closeError">OKAY</button>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
