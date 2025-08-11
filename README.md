@@ -5,7 +5,7 @@ It features calculation history, keyboard support, error handling, and a pastel 
 
 ---
 
-## ✨ Features
+##  Features
 - **Cute & Retro Pixel Design** — Styled with pastel colors and pixelated text using the Press Start 2P font.
 - **Basic Calculator Operations** — Supports addition, subtraction, multiplication, and division.
 - **Calculation History** — View your last 10 calculations in a pop-up panel.
@@ -55,7 +55,7 @@ Enter =	Equals / Compute
 Backspace	Delete last digit
 Escape	Clear input
 
-⚡ Technologies Used
+ Technologies Used
 HTML5
 
 CSS3 (Pixel-art styling, animations)
