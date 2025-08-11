@@ -240,4 +240,35 @@ document.addEventListener('DOMContentLoaded', () => {
             default: return '';
         }
     }
+document.addEventListener('keydown', (e) => {
+  // Prevent default for calculator keys to avoid unintended behavior
+  if (/[0-9+\-*/.=]|Enter|Escape|Backspace/.test(e.key)) {
+    e.preventDefault();
+  }
+
+  // Map keys to button IDs
+  const keyMap = {
+    '0': 'zero', '1': 'one', '2': 'two', '3': 'three', '4': 'four',
+    '5': 'five', '6': 'six', '7': 'seven', '8': 'eight', '9': 'nine',
+    '+': 'add', '-': 'subtract', '*': 'multiply', '/': 'divide',
+    '.': 'decimal', '=': 'equals', 'Enter': 'equals',
+    'Escape': 'clear', 'Backspace': 'backspace'
+  };
+
+  const buttonId = keyMap[e.key];
+  if (buttonId) {
+    document.getElementById(buttonId).click(); // Trigger the button click
+  }
+});
+
+clearButton.addEventListener('click', () => {
+  currentInputDisplay.textContent = "Cleared!";
+  setTimeout(() => {
+    currentInput = '0';
+    previousInput = '';
+    operation = null;
+    updateDisplay();
+  }, 1000);
+});
+
 });
