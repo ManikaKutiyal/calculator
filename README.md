@@ -18,11 +18,11 @@ It features calculation history, keyboard support, error handling, and a pastel 
 ---
 
 ## 🖼 Demo
-🔗 **Live Demo:** [My Math Buddy](https://mymathbuddy.netlify.app/)
+ **Live Demo:** [My Math Buddy](https://mymathbuddy.netlify.app/)
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 my-math-buddy/
 │
 ├── index.html # Main HTML structure
@@ -32,7 +32,7 @@ my-math-buddy/
 └── calc.png # Favicon
 
 
-## 🚀 Installation & Usage
+##  Installation & Usage
 
 1. **Clone this repository:**
    ```bash
@@ -46,7 +46,7 @@ Or use a local server (VS Code Live Server, Python HTTP server, etc.)
 
 Start Calculating!
 
-🎮 Keyboard Controls
+ Keyboard Controls
 Key	Action
 0-9	Enter number
 + - * /	Select operator
@@ -64,10 +64,7 @@ JavaScript (Vanilla) — No external frameworks
 
 Google Fonts (Press Start 2P)
 
-📜 License
+ License
 This project is open-source and available under the MIT License.
 
-💖 Built with love and a sprinkle of pastel magic!
-
-Copy
-Edit
+ Built with love and a sprinkle of pastel magic!
